@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  font-family: Verdana;
+  min-width: 350px;
+  width: 100%;
+  background-color: #d3d3d2;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.content {
+  width: 320px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+.container .content h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.container .content .inputs {
+  margin: 20px 0;
+}
+
+.container .content .tasks ul li {
+  margin-bottom: 10px;
+}
+
+.container .content .inputs #input-box {
+  height: 32px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 5px;
+}
+
+.container .content .inputs #input-box:focus {
+  transition: 0.5s ease-in-out;
+  border: 1px solid #0abb0a;
+  border-radius: 5px;
+}
+
+.container .content .inputs .btn {
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #0abb0a;
+  padding: 5px;
+  font-size: 16px;
+  color: #0abb0a;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .content .inputs .btn:hover {
+  background-color: #0abb0a;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.task-item {
+  margin-bottom: 20px;
+}
