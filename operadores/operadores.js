@@ -49,4 +49,4 @@ function comparation(num1, num2) {
   }
 }
 
-comparation(6, 4)
+comparation(0, 0)

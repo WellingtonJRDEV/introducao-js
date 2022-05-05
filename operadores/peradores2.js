@@ -1,6 +1,6 @@
 function comparaNumero(num1, num2) {
-  if (num1 === undefined || num1 === null || num1 === NaN) {
-    if (num2 === undefined || num2 === null || num2 === NaN) {
+  if (num1 !== undefined || num1 !== null || num1 !== NaN) {
+    if (num2 !== undefined || num2 !== null || num2 !== NaN) {
       if (!num1 || !num2) {
         return 'Insira os números'
       }
@@ -59,4 +59,4 @@ function fraseB(num1, num2) {
   }
 }
 
-console.log(comparaNumero(5, 5))
+console.log(comparaNumero(1, 1))
